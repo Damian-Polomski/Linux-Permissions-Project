@@ -22,7 +22,7 @@ The organisation determined that other shouldn't have write access to any of the
 The following code demonstrates how I used Linux commands to do this:
 
 <p align="center">
-<img src="https://imgur.com/ARiJAR0" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/0wpo4pp" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. 

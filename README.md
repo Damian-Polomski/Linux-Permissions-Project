@@ -54,3 +54,31 @@ The following code demonstrates how I used Linux commands to do this:
 <br />
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made.
+
+<h2>Change file permissions on a hidden file:</h2> <br/>
+
+The research team at my organisation recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
+
+The following code demonstrates how I used Linux commands to change the permissions:
+
+<p align="center">
+<img src="https://imgur.com/Sv7MOVH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
+
+<h2>Change directory permissions:</h2> <br/>
+
+My organisation only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions.
+
+The following code demonstrates how I used Linux commands to change the permissions:
+
+<p align="center">
+<img src="https://imgur.com/vFfZI8g.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added.
+
+<h2>Summary:</h2> <br/>
+
+I changed multiple permissions to match the level of authorisation my organisation wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories.
